@@ -11,6 +11,10 @@ import {Provider} from "react-redux";
 import CheckoutPage from './components/CheckoutPage/checkoutPage';
 import Finish from './pages/Finish/Finish';
 
+
+
+
+
 function App() {
   return (
     <div className="App">

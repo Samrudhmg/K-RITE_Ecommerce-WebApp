@@ -21,6 +21,8 @@ const Navbar = () => {
 
   useEffect(() => {
     dispatch(getCartTotal());
+
+    console.log(categories)
   }, [carts])
 
   return (
@@ -50,7 +52,7 @@ const Navbar = () => {
 
           <ul className='navbar-nav flex align-center fs-15  fw-6 font-manrope'>
             {
-              categories.slice(0, 8).map((category, idx) => (
+              categories.slice(0, 4).map((category, idx) => (
                 <li className='nav-item no-wrap' key = {idx}>
                   <Link to = {`category/${category}`} className='nav-link text-capitalize'>{category.replace("-", " ")}</Link>
                 </li>
